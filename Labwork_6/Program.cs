@@ -46,7 +46,7 @@ namespace Labwork_6
             Console.WriteLine($"Средняя температура по Миру: { AverTemp} ");
 
             var CountryCount = dat.Select(x => x.Country).Distinct().Count();
-            Console.WriteLine(@"Всего стран: {CountryCount} ");
+            Console.WriteLine($"Всего стран: {CountryCount} ");
 
             var FrstCountryCS = dat.Where(x => x.Description == "clear sky").FirstOrDefault();
             Console.WriteLine($"Первая страна у которой чистое небо {FrstCountryCS.Country}");
